@@ -39,6 +39,6 @@ jobs:
         with:
           project: "thomascarlyle"
           entrypoint: "server/entry.mjs"
-          root: "dist/clients"
+          root: "dist"
           
           
