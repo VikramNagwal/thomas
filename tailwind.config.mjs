@@ -4,7 +4,6 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ['Inter var', 'Inter', 'sans-serif'],
 				charm: ['Charm', 'cursive'],
 			}
 		},

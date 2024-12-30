@@ -1,12 +1,16 @@
+---
+import { Image } from "astro:assets";
+import sciImage from "./images/sci.png";
+---
+
 <main class="flex flex-col items-center font-charm max-w-[1280px] mx-auto">
-  <div>
-    <img
-      src="https://media.gettyimages.com/id/1443263799/photo/portrait-of-thomas-carlyle-scottish-historian-satirical-writer-essayist-translator.jpg?s=1024x1024&w=gi&k=20&c=342q43Luo2kSogzhjHZTyo5VYD68fsQt5li9BlHdrFM="
-      alt="Thomas Carlyle"
-      class="w-40 h-40 rounded-full mx-auto"
-    />
-    <h1 class="font-bold text-2xl">Carlyle: Prophet & Critic</h1>
-  </div>
+  <Image
+    src={sciImage}
+    alt="Thomas Carlyle"
+    class="w-40 h-40 rounded-full mx-auto"
+  />
+  <h1 class="font-bold text-2xl">Carlyle: Prophet & Critic</h1>
+
   <div class="p-6 mt-8 text-lg leading-8">
     <p>
       Thomas Carlyle, a prominent Scottish writer of the Victorian era,
@@ -31,10 +35,16 @@
       <br />
       Although his reputation declined in the 20th century due to controversies surrounding
       his personal life and accusations of influencing ideologies like
-      <a href="https://en.wikipedia.org/wiki/Prussianism" class="font-bold">
-        Prussianism and fascism,</a
-      > recent scholarship has restored his standing as a significant figure in English
-      literature.
+      <a
+        href="https://en.wikipedia.org/wiki/Prussianism"
+        title="Learn about Prussianism and its link to fascism"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="font-bold"
+      >
+        Prussianism and its connection to fascism
+      </a> recent scholarship has restored his standing as a significant figure in
+      English literature.
       <br />
       <br />
       This version is shorter, more concise, and focuses on the key aspects of Carlyle's
